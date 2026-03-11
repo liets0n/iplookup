@@ -7,6 +7,9 @@ const nextConfig: NextConfig = {
   reactCompiler: true,
   sassOptions: {
     additionalData: `@use '@/styles/theme/_palette' as *;`
+  },
+  experimental: {
+    globalNotFound: true
   }
 }
 

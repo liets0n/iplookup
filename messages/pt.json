@@ -63,5 +63,13 @@
     },
     "yes": "Sim",
     "no": "Não"
+  },
+  "globalNotFound": {
+    "metadata": {
+      "title": "404 | Foi mal.",
+      "description": "Essa página não existe."
+    },
+    "title": "404 | Foi mal.",
+    "content": "Essa página não existe."
   }
 }

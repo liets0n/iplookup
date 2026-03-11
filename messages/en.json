@@ -63,5 +63,13 @@
     },
     "yes": "Yes",
     "no": "No"
+  },
+  "globalNotFound": {
+    "metadata": {
+      "title": "404 | My bad.",
+      "description": "This page doesn't exist."
+    },
+    "title": "404 | My bad.",
+    "content": "This page doesn't exist."
   }
 }

@@ -8,9 +8,9 @@
   .window {
     width: 28rem;
     height: 10rem;
-    border: 2px solid $gray-900;
+    border: 2px solid var(--gray-900);
     border-radius: 6px;
-    box-shadow: 0.4rem 0.4rem 0 $gray-900;
+    box-shadow: 0.4rem 0.4rem 0 var(--gray-900);
     overflow: hidden;
 
     .header {
@@ -20,7 +20,7 @@
       align-items: center;
       justify-content: space-between;
       padding: 1rem;
-      border-bottom: 2px solid $gray-900;
+      border-bottom: 2px solid var(--gray-900);
 
       &__title {
         font-weight: 700;
@@ -38,10 +38,10 @@
           width: 1rem;
           height: 1rem;
           border-radius: 50rem;
-          border: 2px solid $gray-900;
+          border: 2px solid var(--gray-900);
 
           &--contrast {
-            background-color: $gray-900;
+            background-color: var(--gray-900);
           }
         }
       }
@@ -103,11 +103,11 @@
     margin-top: 1.4rem;
     font-size: 1rem;
     font-weight: bold;
-    border: 2px solid $gray-900;
+    border: 2px solid var(--gray-900);
     border-radius: 6px;
-    color: $gray-900;
+    color: var(--gray-900);
     background: none;
-    box-shadow: 0.4rem 0.4rem 0 $gray-900;
+    box-shadow: 0.4rem 0.4rem 0 var(--gray-900);
     cursor: pointer;
     transition: box-shadow 0.2s;
 

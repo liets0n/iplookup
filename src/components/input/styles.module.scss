@@ -7,10 +7,10 @@
     display: flex;
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-    color: $gray-900;
-    border: 2px solid $gray-900;
+    color: var(--gray-900);
+    border: 2px solid var(--gray-900);
     border-radius: 6px;
-    box-shadow: 0.3rem 0.3rem 0 $gray-900;
+    box-shadow: 0.3rem 0.3rem 0 var(--gray-900);
 
     .container__input {
       width: 85%;
@@ -18,8 +18,8 @@
       font-size: 1rem;
       padding: 1rem;
       border: none;
-      color: $gray-900;
-      background-color: $gray-50;
+      color: var(--gray-900);
+      background-color: var(--gray-50);
     }
 
     .container__btn {
@@ -29,12 +29,12 @@
       align-items: center;
       justify-content: center;
       border: none;
-      border-left: 2px solid $gray-900;
+      border-left: 2px solid var(--gray-900);
       background-color: transparent;
       cursor: pointer;
 
       .btn__icon {
-        color: $gray-900;
+        color: var(--gray-900);
       }
     }
 
@@ -43,7 +43,7 @@
     }
 
     @media (max-width: 828px) {
-      box-shadow: 0.2rem 0.2rem 0 $gray-900;
+      box-shadow: 0.2rem 0.2rem 0 var(--gray-900);
 
       .container__input {
         font-size: 0.875rem;
@@ -70,10 +70,10 @@
   align-items: center;
   padding: 1.5rem;
   margin-top: 1rem;
-  color: $gray-900;
-  border: 2px solid $gray-900;
+  color: var(--gray-900);
+  border: 2px solid var(--gray-900);
   border-radius: 6px;
-  box-shadow: 0.3rem 0.3rem 0 $gray-900;
+  box-shadow: 0.3rem 0.3rem 0 var(--gray-900);
 
   .warning__text {
     text-align: center;

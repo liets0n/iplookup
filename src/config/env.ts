@@ -1,8 +1,7 @@
 import { z } from 'zod'
 
 const envSchema = z.object({
-  NEXT_PUBLIC_SITE_URL: z.url(),
-  NODE_ENV: z.enum(['development', 'production', 'test'])
+  NEXT_PUBLIC_SITE_URL: z.url()
 })
 
 const parsedEnv = envSchema.safeParse(process.env)

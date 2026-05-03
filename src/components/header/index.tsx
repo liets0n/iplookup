@@ -1,6 +1,7 @@
 import Link from 'next/link'
 import { useTranslations } from 'next-intl'
 
+import LocaleSwitcher from '@/components/localeSwitcher'
 import styles from './styles.module.scss'
 
 export default function Header() {
@@ -10,7 +11,7 @@ export default function Header() {
     <header className={styles.wrapper}>
       <div className={styles.leftSide}>
         <Link href='/' className={styles.leftSide__title}>
-          <h1>{t('header.title')}</h1>
+          <h1>IP Lookup</h1>
         </Link>
 
         <p className={styles.leftSide__description}>{t('header.subtitle')}</p>
@@ -27,14 +28,7 @@ export default function Header() {
           <option value='dark'>{t('header.theme.dark')}</option>
         </select>
 
-        <select
-          name='language'
-          defaultValue='pt'
-          className={`${styles.rightSide__select} ${styles['rightSide__select--languages']}`}
-        >
-          <option value='en'>{t('header.language.english')}</option>
-          <option value='pt'>{t('header.language.portuguese')}</option>
-        </select>
+        <LocaleSwitcher />
       </div>
     </header>
   )

@@ -1,7 +1,6 @@
 {
   "home": {
     "header": {
-      "title": "IPLookup",
       "subtitle": "Identifique facilmente a origem de um endereço IP e obtenha mais informações sobre sua localização.",
       "theme": {
         "title": "Alterar o tema actual da página.",
@@ -10,10 +9,7 @@
         "system": "Automático"
       },
       "language": {
-        "title": "Alterar o idioma actual da página.",
-        "portuguese": "Português",
-        "english": "English",
-        "spanish": "Español"
+        "title": "Alterar o idioma actual da página."
       }
     },
     "loading": {

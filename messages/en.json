@@ -1,7 +1,6 @@
 {
   "home": {
     "header": {
-      "title": "IPLookup",
       "subtitle": "Easily identify the origin of an IP address and get more information about its location.",
       "theme": {
         "title": "Change the current page theme",
@@ -10,10 +9,7 @@
         "system": "Auto"
       },
       "language": {
-        "title": "Change the current page language",
-        "portuguese": "Português",
-        "english": "English",
-        "spanish": "Español"
+        "title": "Change the current page language"
       }
     },
     "loading": {

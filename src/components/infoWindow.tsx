@@ -5,7 +5,6 @@ import { useTranslations } from 'next-intl'
 import { Window } from '@/components'
 import { useInfo } from '@/store'
 import { textFormatter } from '@/utils'
-import styles from './styles.module.scss'
 
 export default function InfoWindow() {
   const t = useTranslations('home')
@@ -14,36 +13,34 @@ export default function InfoWindow() {
 
   return (
     <Window windowTitle={t('window.title.information')}>
-      <div className={styles.container}>
-        <li className={styles.list__item}>
-          <p className={styles.item__text}>
-            <span className={styles['text--emphasis']}>{t('info.ipv4')}</span>
+      <div className='[grid-area:info-window] pt-2 pr-4 pb-4 pl-8'>
+        <li>
+          <p className='leading-[2.1rem] [&>span]:text-base'>
+            <span className='font-bold text-gray-800'>{t('info.ipv4')}</span>
             &nbsp;
             <span>{textFormatter(data.ip, t)}</span>
           </p>
         </li>
 
-        <li className={styles.list__item}>
-          <p className={styles.item__text}>
-            <span className={styles['text--emphasis']}>{t('info.city')}</span>
+        <li>
+          <p className='leading-[2.1rem] [&>span]:text-base'>
+            <span className='font-bold text-gray-800'>{t('info.city')}</span>
             &nbsp;
             <span>{textFormatter(data.city, t)}</span>
           </p>
         </li>
 
-        <li className={styles.list__item}>
-          <p className={styles.item__text}>
-            <span className={styles['text--emphasis']}>{t('info.state')}</span>
+        <li>
+          <p className='leading-[2.1rem] [&>span]:text-base'>
+            <span className='font-bold text-gray-800'>{t('info.state')}</span>
             &nbsp;
             <span>{textFormatter(data.region, t)}</span>
           </p>
         </li>
 
-        <li className={styles.list__item}>
-          <p className={styles.item__text}>
-            <span className={styles['text--emphasis']}>
-              {t('info.country')}
-            </span>
+        <li>
+          <p className='leading-[2.1rem] [&>span]:text-base'>
+            <span className='font-bold text-gray-800'>{t('info.country')}</span>
             &nbsp;
             <span>
               {textFormatter(`${data.country_name} ${data.emoji_flag}`, t)}
@@ -51,9 +48,9 @@ export default function InfoWindow() {
           </p>
         </li>
 
-        <li className={styles.list__item}>
-          <p className={styles.item__text}>
-            <span className={styles['text--emphasis']}>
+        <li>
+          <p className='leading-[2.1rem] [&>span]:text-base'>
+            <span className='font-bold text-gray-800'>
               {t('info.continent')}
             </span>
             &nbsp;
@@ -61,17 +58,17 @@ export default function InfoWindow() {
           </p>
         </li>
 
-        <li className={styles.list__item}>
-          <p className={styles.item__text}>
-            <span className={styles['text--emphasis']}>{t('info.time')}</span>
+        <li>
+          <p className='leading-[2.1rem] [&>span]:text-base'>
+            <span className='font-bold text-gray-800'>{t('info.time')}</span>
             &nbsp;
             <span>{textFormatter(time.toLocaleString(), t)}</span>
           </p>
         </li>
 
-        <li className={styles.list__item}>
-          <p className={styles.item__text}>
-            <span className={styles['text--emphasis']}>
+        <li>
+          <p className='leading-[2.1rem] [&>span]:text-base'>
+            <span className='font-bold text-gray-800'>
               {t('info.latitude')}
             </span>
             &nbsp;
@@ -79,9 +76,9 @@ export default function InfoWindow() {
           </p>
         </li>
 
-        <li className={styles.list__item}>
-          <p className={styles.item__text}>
-            <span className={styles['text--emphasis']}>
+        <li>
+          <p className='leading-[2.1rem] [&>span]:text-base'>
+            <span className='font-bold text-gray-800'>
               {t('info.longitude')}
             </span>
             &nbsp;
@@ -89,9 +86,9 @@ export default function InfoWindow() {
           </p>
         </li>
 
-        <li className={styles.list__item}>
-          <p className={styles.item__text}>
-            <span className={styles['text--emphasis']}>{t('info.idiom')}</span>
+        <li>
+          <p className='leading-[2.1rem] [&>span]:text-base'>
+            <span className='font-bold text-gray-800'>{t('info.idiom')}</span>
             &nbsp;
             <span>
               {textFormatter(
@@ -104,9 +101,9 @@ export default function InfoWindow() {
           </p>
         </li>
 
-        <li className={styles.list__item}>
-          <p className={styles.item__text}>
-            <span className={styles['text--emphasis']}>
+        <li>
+          <p className='leading-[2.1rem] [&>span]:text-base'>
+            <span className='font-bold text-gray-800'>
               {t('info.currency')}
             </span>
             &nbsp;
@@ -119,33 +116,33 @@ export default function InfoWindow() {
           </p>
         </li>
 
-        <li className={styles.list__item}>
-          <p className={styles.item__text}>
-            <span className={styles['text--emphasis']}>{t('info.ddd')}</span>
+        <li>
+          <p className='leading-[2.1rem] [&>span]:text-base'>
+            <span className='font-bold text-gray-800'>{t('info.ddd')}</span>
             &nbsp;
-            <span>{textFormatter(`+${data.calling_code}`, t)}</span>
+            <span>{textFormatter(`${data.calling_code}`, t)}</span>
           </p>
         </li>
 
-        <li className={styles.list__item}>
-          <p className={styles.item__text}>
-            <span className={styles['text--emphasis']}>{t('info.tor')}</span>
+        <li>
+          <p className='leading-[2.1rem] [&>span]:text-base'>
+            <span className='font-bold text-gray-800'>{t('info.tor')}</span>
             &nbsp;
             <span>{textFormatter(data.threat.is_tor, t)}</span>
           </p>
         </li>
 
-        <li className={styles.list__item}>
-          <p className={styles.item__text}>
-            <span className={styles['text--emphasis']}>{t('info.proxy')}</span>
+        <li>
+          <p className='leading-[2.1rem] [&>span]:text-base'>
+            <span className='font-bold text-gray-800'>{t('info.proxy')}</span>
             &nbsp;
             <span>{textFormatter(data.threat.is_proxy, t)}</span>
           </p>
         </li>
 
-        <li className={styles.list__item}>
-          <p className={styles.item__text}>
-            <span className={styles['text--emphasis']}>
+        <li>
+          <p className='leading-[2.1rem] [&>span]:text-base'>
+            <span className='font-bold text-gray-800'>
               {t('info.dataCenter')}
             </span>
             &nbsp;

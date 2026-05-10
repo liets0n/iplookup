@@ -1,13 +1,14 @@
 import { Header, InfoWindow, Input, MapWindow } from '@/components'
-import styles from './styles.module.scss'
 
 export default function Home() {
   return (
-    <main className={styles.wrapper}>
-      <Header />
-      <InfoWindow />
-      <MapWindow />
-      <Input />
+    <main className='relative min-h-screen min-w-screen flex items-center justify-center'>
+      <div className='main-layout'>
+        <Header />
+        <InfoWindow />
+        <MapWindow />
+        <Input />
+      </div>
     </main>
   )
 }

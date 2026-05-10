@@ -1,0 +1,86 @@
+@import "tailwindcss";
+
+@theme {
+  --gray-50: #fff;
+  --gray-100: #f1f1f1;
+  --gray-200: #d4d4d4;
+  --gray-300: #ababab;
+  --gray-400: #919191;
+  --gray-500: #7c7c7c;
+  --gray-600: #6a6a6a;
+  --gray-700: #525252;
+  --gray-800: #3b3b3b;
+  --gray-900: #262626;
+}
+
+@layer base {
+  :root {
+    --font-default: var(--font-inter);
+  }
+
+  * {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    box-sizing: border-box;
+  }
+
+  html,
+  body {
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    scroll-behavior: smooth;
+  }
+
+  body,
+  ul,
+  ol,
+  li,
+  textarea,
+  input,
+  select,
+  button,
+  a {
+    font-family: var(--font-default), sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-size: 1rem;
+    font-style: normal;
+  }
+}
+
+@utility main-layout {
+  width: max-content;
+  height: max-content;
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto auto;
+  grid-template-areas: "header header" "information map" "input input";
+  gap: 1.5rem 2rem;
+
+  @media (max-width: 1050px) {
+    width: 80%;
+    height: 100%;
+    padding: 2rem 0 3rem;
+    margin: 0 auto;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto auto;
+    grid-template-areas: "header" "input" "information" "map";
+    /* gap: 0rem 0; */
+  }
+
+  @media (max-width: 486px) {
+    width: 90%;
+    margin-top: 0;
+  }
+}
+
+@utility shadow-hard {
+  box-shadow: 0.3rem 0.3rem 0 var(--gray-900);
+}
+
+@utility shadow-hard-sm {
+  box-shadow: 0.2rem 0.2rem 0 var(--gray-900);
+}

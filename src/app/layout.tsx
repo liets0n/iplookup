@@ -1,11 +1,11 @@
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
-import { NextIntlClientProvider } from 'next-intl'
 import { getLocale } from 'next-intl/server'
+import { NextIntlClientProvider } from 'next-intl'
 
 import { siteConfig } from '@/config/site'
 
-import '@/styles/global.scss'
+import '@/styles/globals.css'
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
